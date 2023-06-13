@@ -1,0 +1,481 @@
+:root {
+    --VeryDarkBlue: hsl(243, 87%, 12%);
+    --DesaturatedBlue: hsl(238, 22%, 44%);
+    --BrightBlue: hsl(224, 93%, 58%);
+    --ModerateCyan: hsl(170, 45%, 43%);
+    --LightGrayishBlue: hsl(240, 75%, 98%);
+    --LightGray: hsl(0, 0%, 75%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* My styling will be taking a mobile first approach */
+
+/* header styling starts here */
+header {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+#logo {
+    width: 9rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+/* header styling ends here */
+
+/* welcome article styling starts here */
+#welcome-article {
+    padding: 2.3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#welcome-article h2 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--VeryDarkBlue);
+    line-height: 1.5;
+}
+
+#welcome-article p {
+    text-align: center;
+    color: var(--VeryDarkBlue);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+form input {
+    padding: 1.2rem 1.8rem 1.2rem 1.8rem;
+    border: 1px solid var(--VeryDarkBlue);
+    border-radius: .3rem;
+}
+
+form button {
+    padding: 1.2rem 1.8rem 1.2rem 1.8rem;
+    background-color: var(--BrightBlue);
+    color: white;
+    border: none;
+    border-radius: .3rem;
+}
+
+#welcome-article #email-check {
+        margin-top: 0.3rem;
+        font-size: .8rem;
+        display: block;
+        text-align: left;
+    }
+/* welcome article styling ends here */
+
+/* information article styling starts here */
+
+#curve {
+    width: 100%;
+}
+#information-article {
+    background-color: var(--LightGrayishBlue);
+    padding: 2.3rem;
+    text-align: center;
+}
+
+#information-article #illustration-2 {
+    margin-bottom: 7rem;
+    padding: 1rem;
+}
+
+#information-article h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: var(--VeryDarkBlue);
+
+}
+
+.information-text {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--VeryDarkBlue);
+    margin-bottom: 1.5rem;
+}
+
+#how-fylo-works-div {
+    display: inline-flex;
+    gap: .5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid var(--ModerateCyan);
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+#how-fylo-works-div span {
+    color: var(--ModerateCyan);
+    font-size: 1.2rem;
+}
+
+#quote-div {
+    margin: 0 2rem 6rem 2rem;
+    padding: 1.8rem 2.5rem 1.8rem 2.5rem;
+    background-color: white;
+    text-align: left;
+}
+
+#quote-div .image-quote {
+    margin-bottom: 1rem;
+}
+
+#quote-div p {
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    border-radius: 1rem;
+}
+
+#avatar {
+    border-radius: 50%;
+    width: 3rem;
+}
+/* information article design ends here */
+
+/* early access section styling starts here */
+#early-access {
+    text-align: center;
+    color: white;
+    background-color: var(--DesaturatedBlue);
+    padding: 4rem;
+}
+
+#early-access h3 {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+#early-access p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    line-height: 1.7;
+}
+
+#early-access div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#early-access input {
+    padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+    border: 1px solid var(--VeryDarkBlue);
+    border-radius: .3rem;
+}
+
+#early-access input::placeholder {
+    font-size: 1.2rem;
+}
+
+#early-access button {
+    padding: 1.2rem 1.8rem 1.2rem 1.8rem;
+    background-color: var(--BrightBlue);
+    color: white;
+    border: none;
+    border-radius: .3rem;
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+}
+/* early access section styling starts here */
+
+/* footer styling starts here */
+footer {
+    background-color: var(--VeryDarkBlue);
+    color: white;
+    padding: 4rem;
+}
+
+footer > img {
+    /* filter: drop-shadow(0 0 white); */
+    color: white;
+    filter: grayscale(100%);
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+footer {
+    font-size: 1.4rem;
+}
+
+.flexbox {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.flexbox img {
+    display: block;
+    width: 1.5rem;
+}
+
+.column-flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.icons {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+i {
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: .5rem .6rem .5rem .6rem;
+}
+
+footer a {
+    color: white;
+}
+
+.attribution {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* footer styling ends here */
+
+/* desktop styling starts here */
+
+@media all and (min-width: 1000px) {
+
+    /* header styling starts */
+    header {
+        padding: 4rem 6rem 4rem 6rem;
+    }
+    /* header styling ends */
+
+    /* welcome article styling starts */
+    #welcome-article {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 4rem 6rem 4rem 6rem;
+        gap: 3rem;
+    }
+
+    #welcome-article img {
+        width: 45%;
+    }
+    
+    .lg-flex {
+        padding-right: 1rem;
+    }
+    
+    
+    #welcome-article .lg-flex h2 {
+        text-align: left;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    #welcome-article .lg-flex p {
+        text-align: left;
+        margin-bottom: 1.5rem;
+    }
+    
+    #welcome-article form {
+        flex-direction: row;
+        padding-right: 2rem;
+    }
+    
+    #welcome-article form input {
+        width: 57%;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    
+    #welcome-article form button {
+        width: 35%;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+    #welcome-article #email-check {
+        margin-top: 0.3rem;
+        font-size: .8rem;
+        display: block;
+        text-align: left;
+    }
+    /* welcome article styling ends */
+    
+    /* information article styling starts */
+    #information-article {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1rem 6rem 4rem 6rem;
+        gap: 3rem;
+    }
+    
+    #information-article img {
+        width: 45%;
+    }
+
+    #information-article h3 {
+        text-align: left;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .information-text {
+        margin-right: 13rem;
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #how-fylo-works-div {
+        justify-content: flex-start;
+        margin-top: 0;
+    }
+
+    #how-fylo-works-div img {
+        width: 1.5rem;
+    }
+
+    .left {
+        text-align: left;
+    }
+
+    #quote-div {
+        margin-left: 0;
+        margin-right: 25rem;
+    }
+
+    #quote-div .image-quote {
+        width: 1.5rem;
+    }
+    #quote-div #avatar {
+        width: 3rem;
+    }
+    /* information article styling ends */
+
+    /* early access section styling starts */
+    #early-access {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10rem;
+        padding: 6rem;
+    }
+
+    #early-access h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 2rem;
+    }
+
+    #early-access p {
+        font-size: 1.3rem;
+    }
+
+    #early-access div {
+        margin: 0;
+    }
+    #early-access .long {
+        width: 100%;
+        margin-right: 5rem;
+    }
+
+    .long button {
+        width: 40%;
+    }
+
+    #early-access div {
+        margin: 0;
+    }
+
+    #logo-footer {
+        margin-bottom: 0;
+        padding-left: 2rem;
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2rem;
+        padding-top: 0;
+        margin-right: 7rem;
+        margin-bottom: 4rem;
+    }
+
+    .column-flex {
+        margin-top: 0;
+    }
+
+    .icons {
+        margin-top: 0;
+    }
+    /* early access section styling starts */
+/* 
+    #early-access #margin-right{
+        margin-right: 20rem;
+    } */
+
+    /* early access article styling ends */
+}
